@@ -1,0 +1,149 @@
+
+
+body {
+
+
+  background: linear-gradient(135deg, #2C1810 0%, #6F4E37 50%, #C69C6D 100%);
+}
+.test{
+    margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-title {
+color: #dfd5c9;
+font-weight: 900;
+}
+
+.sub-head{
+font-weight: 700;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.para{
+  white-space: nowrap;
+  width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: typing 4s steps(60) infinite,
+             blink 0.7s infinite;
+             font-size: 1.2em;
+             font-style: italic;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -70px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  40%,
+  80% {
+    width: 54ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.quote-container {
+  background-color: #dfd5c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width:360px;
+  min-height: 250px;
+  padding: 24px;
+  border-radius: 30px;
+}
+
+
+.quote-text{
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.1em;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.quote-sign{
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.quote-author{
+  align-self: flex-end;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-size: 0.9em;
+}
+hr{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.create-btn{
+  align-self: flex-end;
+  background-color: #6F4E37;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  max-width: 160px;
+  height: 50px;
+}
+
+.copy-btn{
+  align-self: flex-start;
+  background-color: #6F4E37;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  max-width: 160px;
+  height: 50px;
+  position: relative;
+
+  top: -50px;
+}
+
+
+.copy-btn:hover,.create-btn:hover{
+  background-color: #301d0f;
+  cursor: pointer;
+}
+
+@media (min-width:768px) {
+  .quote-container {
+  width: 900px;
+
+}
+}
+
+@media (max-width: 600px) {
+  .para {
+    white-space: normal;
+    height: 3.6em;
+  }
+}
